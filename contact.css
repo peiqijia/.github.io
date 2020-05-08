@@ -1,0 +1,191 @@
+
+input[type=text], select, textarea {
+    width: 100%; 
+    padding: 10px; 
+    border: 1px solid #bc96d8; /* Pink border */
+    border-radius: 0px; /* Rounded borders */
+    box-sizing: border-box; 
+    margin-top: 10px; 
+    margin-bottom: 5px; 
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+
+  }
+  
+  input[type=submit] {
+    background-color:#b492ce;;
+    color: white;
+    border: none;
+    border-radius: 0px;
+    cursor: pointer;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color: #e8dcf1;
+  }
+
+.container {
+  border-radius: 0px;
+  background-color: #e8dcf1;
+  padding: 75px;
+}
+  
+  /* Add a background color and some padding around the form */
+ 
+  
+  ul {
+    list-style-type: none;
+    margin-top: -135px;
+    margin-left: -110px;
+    /* overflow: hidden; */
+    background-color: #e8dcf1;
+    font-size: 1.1em; 
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    }
+    
+  li {
+      float: left;
+      padding-top: 15px;
+    }
+    
+   li a {
+      display: inline;
+      color: rgb(149, 60, 167);
+      text-align: center;
+      padding: 18px 17px;
+      text-decoration: none; 
+    }
+    
+    li a:hover {
+    width: 130px; 
+    color: rgb(241, 202, 233);
+    } 
+    html, body {
+      margin: auto;
+      margin-top: 30px;
+      background-color:#f1eaf7;
+    } 
+    
+    .container {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      grid-template-rows: 10% auto 10%;
+      height: 70vh;
+      
+    }
+    
+    nav {
+      grid-column: 1 / -1;
+      grid-row: 1/-1; 
+      z-index: 1; 
+        display:inline;
+        
+    }
+    
+    .main {
+      grid-column: 2 / -1;
+      grid-row: 1/-1;
+      z-index:2;
+      margin-left: 350px;
+      margin-top: 80px;
+      padding-bottom: 40px; 
+      display:block;
+      
+    
+    }
+    img {
+      grid-column: 2 / -1;
+      grid-row: 2/-1;
+      z-index:1;
+      margin-left: -25px; 
+      margin-top: -10px; 
+      position: absolute; 
+      width:400px;
+      
+    }
+    
+    img:hover {
+      filter: none;
+      z-index: 3;
+      position: absolute;
+        filter: opacity(80%);
+        transition: filter .5s ease-in-out;
+    }
+    
+    h1 {
+      color:rgb(149, 60, 167);
+      font-size: 3em; 
+      margin-left: 1px; 
+      margin-bottom: -25px; 
+      margin-top: -545px; 
+    }
+    @media screen and (max-width: 735px) 
+    {
+       
+        .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 10% auto 10%;
+        height: 135vh;
+    
+        
+      }
+    
+      .main {
+        grid-column: 2 / -1;
+        grid-row: 1/-1;
+        z-index:2;
+        margin-left:-200px;
+        margin-top: 580px;
+        padding-bottom: 40px; 
+    }
+    nav {
+      grid-column: 1 / -1;
+      grid-row: 1/-1; 
+      z-index: 2; 
+      display:inline;
+      margin-left: 43px;
+      font-size: 20px;
+    }
+    img {
+      grid-column: 2 / -1;
+      grid-row: 2/-1;
+      z-index:1;
+      margin-left: -3px; 
+      margin-top: -10px; 
+      width:350px;
+      
+    }
+    h1 {
+      color:rgb(149, 60, 167);
+      font-size: 2.3em; 
+      margin-left: 90px; 
+      margin-bottom: -25px; 
+      margin-top: -545px; 
+    }
+    input[type=submit] {
+        background-color:#b492ce;;
+        color: white;
+        border: none;
+        border-radius: 0px;
+      cursor: pointer;
+      width: 50px;
+      margin-left:150px;
+      }
+    }
+
+
+  
+
+
+
+
+
+
+
+
+
+ 
+   
+  
+

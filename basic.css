@@ -1,0 +1,50 @@
+#Layer_4{
+    animation: move 9s infinite; 
+}
+#Layer_5{
+    animation: move 11s infinite; 
+}
+#Layer_6{
+    animation: move 7s infinite; 
+}
+#Layer_7{
+    animation: move 6s infinite; 
+}
+#Layer_8{
+    animation: move 8s infinite; 
+}
+#Layer_9{
+    animation: move 5s infinite; 
+}
+#Layer_10{
+    animation: move 6s infinite; 
+}
+#Layer_11{
+    animation: move 7s infinite; 
+}
+
+
+@-webkit-keyframes move {
+	from {
+			transform:rotate(0deg);
+			-webkit-transform:rotate(0deg);}
+	to {
+			transform:rotate(360deg);
+			-webkit-transform:rotate(360deg);
+	}
+}
+
+
+@keyframes move {
+	from {
+			transform:rotate(0deg);
+			-webkit-transform:rotate(0deg);}
+	to {
+			transform:rotate(360deg);
+			-webkit-transform:rotate(360deg);
+	}
+}
+
+
+  
+

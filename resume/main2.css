@@ -1,0 +1,192 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f7eafe;
+    color: rgb(80, 78, 78);;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+p {
+    font-weight: 300;
+}
+
+ul{
+    font-weight: 300;
+    padding: 0;
+    list-style-type: none;
+}
+.navbar{
+    text-decoration: none; 
+    padding-top: 15px;
+    
+}
+li{
+    font-weight: 500;
+    padding: 10px;
+}
+
+.date {
+    font-weight: 300;
+}
+
+.gradient-bg {
+    background: rgb(245,221,251);
+    background: linear-gradient(90deg, rgba(245,221,251,1) 0%, rgba(250,229,255,1) 50%, rgba(239,183,255,1) 100%);
+}
+
+.container {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 10% 350px 150px 1fr 1fr 25%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    ". p l l . . "
+    ". p . a . ."
+    ". m . c c ."
+}
+
+    #logo {
+        width: 200px;
+        margin-top:auto;
+        padding-left:100px;
+        grid-area:l;
+    }
+    
+    .name_and_major {
+        margin-top: auto;
+        grid-area: a;
+    }
+    
+    .name_and_major >h1 {
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+    
+    .profile{
+        grid-area: g;
+    }
+    .profile-picture {
+        padding: 100px 15px 10px 15px;
+        grid-area: p;
+    }
+    
+    .m-container {
+        padding-top: 20px;
+        padding: 30px;
+        grid-area: m;
+    }
+    
+    .c-container {
+        padding-top: 20px;
+        margin-right: auto;
+        grid-area: c;
+    }
+    
+    #email , #website, #phone {
+        margin-bottom: -6px;
+        width: 18px;
+
+    
+    }
+    .skills{
+        grid-area: k;
+    }
+    .contact{
+        grid-area:f;
+
+    }
+    .contact, .education, .skills {
+        padding-bottom: 30px;
+    }
+    
+
+    @media screen and (max-width: 800px) 
+{
+   
+    .container{
+        display: grid;
+        grid-gap: 15px;
+        /* grid is only one column, keep this way */
+        grid-template-columns: 1fr;
+        /* you can enter values, or auto will adjust the box sizes based on content */
+        grid-template-rows:auto;
+        grid-template-areas:
+
+        "l"
+        "p"
+        "f"
+        "a"
+        "b"
+        "c"
+        "m"
+        "k";
+    }
+
+    body {
+        padding: 0 20px;
+    }
+
+    
+#logo {
+   margin-top:20px;
+    margin-left: 15px;
+}
+
+    .profile-picture {
+        margin-top: 5px;
+        padding-top: 10px;
+    }
+
+    .gradient-bg {
+        background: #f7eafe;
+    }
+
+    
+    .c-container {
+        padding-left: 30px;
+    }
+
+    .name_and_major {
+        padding-left: 30px;
+    }
+    img {
+        width: 80%;
+        height: auto;
+        margin-left: 40px;
+    }
+    .name_and_major {
+        margin-top: auto;
+        grid-area: a;
+        margin-left: 26px;
+    }
+    .profile{
+        margin-left: 30px;
+       
+    }
+    .contact{
+        margin-left: 31px;
+        margin-top: -50px;
+    
+    }
+    .education{
+        margin-left: 34px;
+        margin-top: -20px;
+    }
+    .skills{
+        margin-left: 34px;
+    }
+    #email , #website, #phone {
+        margin-bottom: -6px;
+        width: 18px;
+        margin-left: -10px;
+}
+
+}

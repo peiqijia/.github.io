@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="animate.min.css">
+    <link rel="stylesheet" href="artwork.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:italic,100,800" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css"
+    />
+    <script src="main.js"></script>
+  </head>
+  <body>
+    
+    <div class="container">
+     
+      </div>
+      <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutme.html">About</a></li>  
+          <li><a href="portfolio.html">Portfolio</a></li>   
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        </nav>
+
+
+      <div class="content">
+
+        <h2>App Design</h2>
+        <div class="slideshow-container">
+
+           
+            <div class="mySlides fade">
+              <img src="P3.jpg" width="400px">
+            </div>
+            <div class="mySlides fade">
+              <img src="P3-2.jpg" width="400px">
+            </div>
+           
+          
+              
+            </div>
+            
+            <!-- <div class="mySlides fade">
+             <img src="/images/wallpaper/3.png" width="400px" >
+            </div>
+             -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            
+            </div>
+            <br>
+            
+            <div style="text-align:center">
+              <span class="dot" onclick="currentSlide(1)"></span> 
+              <span class="dot" onclick="currentSlide(2)"></span> 
+              <!-- <span class="dot" onclick="currentSlide(3)"></span>  -->
+            </div>
+        
+        <script src="" async defer></script>
+        <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";  
+              }
+              for (i = 0; i < dots.length; i++) {
+                  dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+            }
+            </script>
+        
+          
+                   
+        <!-- Description of project -->
+       
+        <p>
+             <p class="paragraph2"> 
+              This smartphone app designed for couples to use and offer private space for them to use. Provide a convenient platform for communication and memorize every moment. Even if the couples stay apart, they still can share things on this app to reach each other and give people the feeling they still are together. The goal to make this app is to increase the love feelings between couples and last the relationship. Reduce the frequency of quarrels between couples. 
+              In this app, it includes these functions:
+              Private Chat: Record every happiness love moment and only two of the couple can see.
+              Remote alarm clock: Wake up each other.
+              Day of commemoration: Record various anniversaries.
+              Record women's miserable days for each month.
+              Location Check: Protect each other's safety.
+              Journal: Sometimes people are hard to talk about something when face to face. This is an excellent opportunity to express their true feelings and let each other see it. 
+              Private Album.
+              I make two versions for different genders.
+               </p>
+             <br>
+             <br>      
+     
+
+      
+            
+          </li>
+        </ul>
+      </div>
+  </body>
+</html>

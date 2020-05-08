@@ -1,0 +1,200 @@
+html, body {
+	margin: auto;
+	margin-top: 30px;
+	background-color:#f1eaf7;
+} 
+
+  .container {
+    border-radius: 0px;
+    background-color: #e8dcf1;
+    padding: 70px;
+  }
+
+  ul {
+    list-style-type: none;
+    margin-top: -130px;
+    margin-left: -90px;
+    /* overflow: hidden; */
+    background-color: rgb(241, 202, 233);
+    font-size: 1.1em; 
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    }
+    
+  li {
+      float: left;
+      padding-top: 15px;
+    }
+    
+   li a {
+      display: inline;
+      color: rgb(149, 60, 167);
+      text-align: center;
+      padding: 18px 17px;
+      text-decoration: none; 
+      font-size: 1em; 
+    }
+    
+    li a:hover {
+    width: 130px; 
+    color: rgb(214, 188, 219);
+    } 
+
+
+
+.instagram{
+  width: 3.5%;
+  margin-left: 0px;
+  margin-top: 0px;
+  
+}
+.linkedin{
+  width: 3.5%;
+  margin-left:100px;
+  margin-top: -3px;
+}
+html, body {
+	margin: auto;
+	margin-top: 30px;
+
+} 
+
+.container {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-template-rows: 10% auto 10%;
+	height: 70vh;
+	
+}
+
+nav {
+	grid-column: 1 / -1;
+	grid-row: 1/-1; 
+	z-index: 1; 
+    display:block;
+    
+}
+img {
+	grid-column: 2 / -1;
+	grid-row: 2/-1;
+	z-index:1;
+	margin-left: -25px; 
+	margin-top: -10px; 
+	position: absolute; 
+	width: 400px;
+	
+}
+.main {
+	grid-column: 2 / -1;
+	grid-row: 2/-1;
+	z-index:2;
+	padding-left: 400px;
+	margin-top: -10px; 
+	
+}
+
+  
+img:hover {
+	filter: inherit;
+	z-index: 3;
+	position: absolute;
+	filter: opacity(80%);
+	transition: filter .7s ease-in-out;
+}
+
+h1 {
+	color: rgb(106, 62, 148); 
+	font-size: 3em; 
+	font-family: 'Sorts Mill Goudy', serif;
+	margin-top: -30px;
+}
+
+p {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 0.95em; 
+	color:rgb(35, 73, 129);
+	line-height: 25px;
+	grid-area: b;
+}
+h6 {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 0.95em; 
+	color:rgb(35, 73, 129);
+	line-height: 25px;
+	grid-area: b;
+}
+
+@media screen and (max-width: 735px) 
+{
+	img {
+		grid-column: 2 / -1;
+		grid-row: 2/-1;
+		z-index:1;
+		margin-left: 5px; 
+		margin-top: -10px; 
+		position: absolute; 
+		width: 330px;
+		
+	}
+    .container{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 10% auto 10%;
+		height: 135vh;
+
+		
+	}
+	h1 {
+		color: rgb(106, 62, 148); 
+		font-size: 2em; 
+		font-family: 'Sorts Mill Goudy', serif;
+		margin-top: 330px;
+		margin-left: -300px;
+
+	}
+	
+	p {
+		font-family: Verdana, Geneva, sans-serif;
+		font-size: 0.85em;
+        width:auto;
+		color:rgb(35, 73, 129);
+		line-height: 25px;
+		margin-top: 30px;
+		margin-left: -435px;
+	
+	}
+	h6{
+		font-family: Verdana, Geneva, sans-serif;
+		font-size: 0.8em;
+        width:auto;
+		color:rgb(35, 73, 129);
+		line-height: -10px;
+		margin-top: 30px;
+		margin-left: -450px;
+		text-align: center;
+	}
+	.instagram{
+		width: 10%;
+		margin-left: -330px;
+		margin-top: 21px;
+		
+	  }
+	  .linkedin{
+		width: 10%;
+		margin-left:-180px;
+		margin-top: 18px;
+}
+nav {
+	grid-column: 1 / -1;
+	grid-row: 1/-1; 
+	z-index: 2; 
+	display:inline;
+	margin-left: 43px;
+	font-size: 20px;
+}
+.resume{
+	text-decoration: none;
+	font-size: 17px;
+	margin-left: -260px;
+	margin-top: -10px;
+}
+}

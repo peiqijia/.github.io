@@ -1,0 +1,161 @@
+.st0{fill:rgb(247, 239, 248);}
+	.st1{fill:rgb(245, 228, 248);stroke:rgb(245, 228, 248);stroke-miterlimit:10;}
+	.st2{fill:rgb(217, 171, 223);stroke:rgb(229, 199, 241);stroke-miterlimit:10;}
+	.st3{opacity:0.5;fill:rgb(219, 168, 214);stroke:rgb(219, 239, 253);stroke-miterlimit:10;}
+	.st4{opacity:0.5;fill:rgb(193, 193, 250);stroke:rgb(234, 248, 207);stroke-miterlimit:10;}
+	.st5{opacity:0.5;fill:rgb(151, 209, 185);stroke:rgb(243, 206, 250);stroke-miterlimit:10;}
+	.st6{opacity:0.5;fill:rgb(232, 235, 198);stroke:rgb(176, 165, 240);stroke-miterlimit:10;}
+	.st7{opacity:0.5;fill:rgb(220, 178, 252);stroke:rgb(201, 201, 240);stroke-miterlimit:10;}
+	.st8{opacity:0.5;fill:rgb(139, 197, 241);stroke:#FFFFFF;stroke-miterlimit:10;}
+	.st9{opacity:0.5;fill:rgb(198, 179, 223);stroke:#FFFFFF;stroke-miterlimit:10;}
+	.st10{opacity:0.5;fill:#C58FEF;stroke:#FFFFFF;stroke-miterlimit:10;}
+	
+html, body {
+	margin: auto;
+	margin-top: 30px;
+	background-color: rgb(249, 231, 252); 
+} 
+
+ul {
+	list-style-type: none;
+	margin-top: -60px;
+	padding-left: 20px;
+  /* overflow: hidden; */
+	background-color: rgb(246, 239, 247);
+	font-size: 1.1em; 
+	font-family: 'Barlow Semi Condensed', sans-serif;
+  }
+  
+li {
+		float:left;
+		padding-top: 15px;
+  }
+  
+ li a {
+    display: inline;
+    color: rgb(149, 60, 167);
+    text-align: center;
+    padding: 18px 17px;
+	text-decoration: none; 
+  }
+  
+  li a:hover {
+	width: 130px; 
+	color: rgb(214, 188, 219);
+  } 
+
+#changingword {
+	color: rgb(141, 79, 223); 
+	font-size: 1em; 
+	
+}
+ 
+h1 {
+	/* margin-left: 110px; */
+	font-family: 'Sorts Mill Goudy', serif;
+	font-size: 30pt; 
+	color: rgb(197, 152, 195); 
+	/* position: absolute; */
+}
+
+.container {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-template-rows: 10% auto 10%;
+	
+	
+}
+
+nav {
+	grid-column: 1 / -1;
+	grid-row: 1/-1; 
+	z-index: 2; 
+	display:inline;
+	
+}
+
+.name {
+	grid-column: 1 / -1;
+	grid-row: 2/-1;
+	z-index:2;
+	padding-left: 100px;
+	padding-top: 160px;
+
+}
+#background {
+	grid-column: 1 / -1;
+	grid-row: 1/-1;
+	z-index:1;
+	height: 700px;
+	width: 600px;
+	margin-left: 800px;
+	
+ 
+}
+
+
+/* Style all font awesome icons */
+.fa {
+	padding: 10px;
+	font-size: 70px;
+	width: 20px;
+	text-align: center;
+	text-decoration: none;
+	margin-top: 50px;
+	
+  }
+  
+  .fa:hover {
+	opacity: 0.7;
+  }
+  
+
+  
+  .fa-instagram{
+	background: rgb(143, 91, 143);
+	color: white;
+  }
+
+
+
+  .fa-linkedin{
+	background: rgb(49, 49, 139);
+	color: white;
+  }
+
+
+/* MEDIA QUERY FOR SMALL SCREENS */
+
+  
+ 
+ 
+  @media (max-width:735px){
+	   .container{
+		   display: grid;
+		   grid-template-columns: 1fr 1fr;
+		   grid-template-rows: 10% auto 10%;
+		   height: 90vh;
+   
+		   
+	   }
+	   h1 {
+		   color: rgb(106, 62, 148); 
+		   font-size: 2em; 
+		   font-family: 'Sorts Mill Goudy', serif;
+		   margin-top: 330px;
+		   margin-left:-30px;
+	   }
+	   #background{
+		   margin-top:0px ;
+		   margin-left: 60px;
+		   width:500px;
+	   }
+	   nav {
+		grid-column: 1 / -1;
+		grid-row: 1/-1; 
+		z-index: 2; 
+		display:inline;
+		margin-left: 43px;
+		font-size: 20px;
+	}
+}
